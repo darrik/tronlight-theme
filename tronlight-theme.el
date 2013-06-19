@@ -1,12 +1,12 @@
-;;; tron-theme.el
+;;; tronlight-theme.el
 ;;
 ;; Copyright (c) 2013 Rikard Glans
 ;;
 ;; Author: Rikard Glans (rikard@ecx.se)
-;; URL: https://github.com/darrik/tron-theme
+;; URL: https://github.com/darrik/tronlight-theme
 ;; Version: 002
 ;;
-;; Time-stamp: <2013-06-19 22:36:53>
+;; Time-stamp: <2013-06-19 22:39:09>
 ;;
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -22,9 +22,9 @@
 ;; along with this program. If not, see <http://www.gnu.org/licenses/>.
 
 (unless (>= 24 emacs-major-version)
-  (error "tron-theme requires Emacs 24 or later."))
+  (error "tronlight-theme requires Emacs 24 or later."))
 
-(deftheme tron
+(deftheme tronlight
   "Port of Dayle Rees and Tim Heckman's TronLight theme.")
 
 (let ((*default*    "#aec2e0")
@@ -45,7 +45,7 @@
       )
 
   (custom-theme-set-faces
-   'tron
+   'tronlight
 
    `(default                          ((t (:foreground ,*default*    :background ,*background*))))
 
@@ -105,10 +105,10 @@
   (add-to-list 'custom-theme-load-path
                (file-name-as-directory (file-name-directory load-file-name))))
 
-(provide-theme 'tron)
+(provide-theme 'tronlight)
 
 ;; Local Variables:
 ;; no-byte-compile: t
 ;; End:
 
-;;; tron-theme.el ends here
+;;; tronlight-theme.el ends here
