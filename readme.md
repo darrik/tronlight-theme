@@ -1,10 +1,14 @@
-# Tron theme
+# TronLight
 
 My Emacs port of [Dayle Rees and Tim Heckman's TronLight Sublime Text 2 / Textmate Theme](https://github.com/daylerees/colour-schemes).
 
 ## Installation
 
-Drop in your custom-theme-load-path and (load-theme 'tron)
+Drop in your custom-theme-load-path and (load-theme 'tronlight)
+
+## Requirements
+
+Emacs 24.x
 
 ## License
 
