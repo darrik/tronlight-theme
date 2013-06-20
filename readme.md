@@ -10,6 +10,14 @@ Drop in your custom-theme-load-path and (load-theme 'tronlight)
 
 Emacs 24.x
 
+## Comments
+
+Very much a work in progress at the moment and should be considered early alpha.
+
+## Screenshot
+
+![screenshot](https://raw.github.com/darrik/tronlight-theme/master/screenshot.png "TronLight screenshot")
+
 ## License
 
 Copyright (C) 2013 Rikard Glans

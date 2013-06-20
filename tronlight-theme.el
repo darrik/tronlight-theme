@@ -4,9 +4,9 @@
 ;;
 ;; Author: Rikard Glans (rikard@ecx.se)
 ;; URL: https://github.com/darrik/tronlight-theme
-;; Version: 002
+;; Version: 003
 ;;
-;; Time-stamp: <2013-06-19 22:39:09>
+;; Time-stamp: <2013-06-20 02:21:52>
 ;;
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -61,6 +61,7 @@
    `(match                            ((t (:foreground "#748aa6"     :background ,*background* :underline t))))
    `(menu                             ((t (:foreground ,*default*    :background ,*background*))))
    `(mode-line                        ((t (:foreground ,*default*    :background "#414a57" :weight bold))))
+   `(mode-line-inactive               ((t (:foreground "#232a32"     :background "#414a57" :weight bold))))
    `(region                           ((t (:foreground ,*default*    :background "#183c66"))))
    `(vertical-border                  ((t (:foreground "#414a57"     :background "#414a57"))))
 
@@ -74,6 +75,7 @@
    `(font-lock-keyword-face           ((t (:foreground "#748aa6"     :background ,*background*))))
    `(font-lock-preprocessor-face      ((t (:foreground "#748aa6"     :background ,*background*))))
    `(font-lock-string-face            ((t (:foreground "#6ee2ff"     :background ,*background*))))
+   `(font-lock-operator-face          ((t (:foreground "#6cc2ff"     :background ,*background*))))
    `(font-lock-type-face              ((t (:foreground ,*default*    :background ,*background*))))
    `(font-lock-variable-name-face     ((t (:foreground "#267fb5"     :background ,*background* :slant italic))))
    `(font-lock-warning-face           ((t (:foreground ,*warn-fg*    :background ,*warn-bg*))))
