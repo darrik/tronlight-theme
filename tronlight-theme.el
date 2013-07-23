@@ -6,7 +6,7 @@
 ;; URL: https://github.com/darrik/tronlight-theme
 ;; Version: 003
 ;;
-;; Time-stamp: <2013-06-20 02:21:52>
+;; Time-stamp: <2013-07-23 04:29:01>
 ;;
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -88,8 +88,20 @@
 
    ;; org
    `(org-todo                         ((t (:foreground "#516a88"     :background ,*background*))))
+   `(org-date                         ((t (:foreground "#406587"     :background ,*background*))))
+   `(org-document-info-keyword        ((t (:foreground "#748aa6"     :background ,*background*))))
+   `(org-document-title               ((t (:foreground "#6ee2ff"     :background ,*background*))))
+   `(org-level-1                      ((t (:foreground ,*rdd-1*))))
+   `(org-level-2                      ((t (:foreground ,*rdd-2*))))
+   `(org-level-3                      ((t (:foreground ,*rdd-3*))))
+   `(org-level-4                      ((t (:foreground ,*rdd-4*))))
+   `(org-level-5                      ((t (:foreground ,*rdd-5*))))
+   `(org-level-6                      ((t (:foreground ,*rdd-6*))))
+   `(org-level-7                      ((t (:foreground ,*rdd-7*))))
+   `(org-level-8                      ((t (:foreground ,*rdd-8*))))
+   `(org-level-9                      ((t (:foreground ,*rdd-9*))))
 
-   ;; rdd
+   ;; rainbow delimiters
    `(rainbow-delimiters-depth-1-face  ((t (:foreground ,*rdd-1*))))
    `(rainbow-delimiters-depth-2-face  ((t (:foreground ,*rdd-2*))))
    `(rainbow-delimiters-depth-3-face  ((t (:foreground ,*rdd-3*))))
