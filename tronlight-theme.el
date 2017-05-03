@@ -1,12 +1,12 @@
 ;;; tronlight-theme.el
 ;;
-;; Copyright (c) 2013 Rikard Glans
+;; Copyright (c) 2013-2017 Rikard Glans
 ;;
 ;; Author: Rikard Glans (rikard@ecx.se)
 ;; URL: https://github.com/darrik/tronlight-theme
-;; Version: 003
+;; Version: 004
 ;;
-;; Time-stamp: <2013-07-23 04:29:01>
+;; Time-stamp: <2017-05-03 22:23:17>
 ;;
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -21,7 +21,7 @@
 ;; You should have received a copy of the GNU General Public License
 ;; along with this program. If not, see <http://www.gnu.org/licenses/>.
 
-(unless (>= 24 emacs-major-version)
+(unless (>= emacs-major-version 24)
   (error "tronlight-theme requires Emacs 24 or later."))
 
 (deftheme tronlight
@@ -71,13 +71,14 @@
    `(font-lock-comment-face           ((t (:foreground "#516a88"     :background ,*background*))))
    `(font-lock-constant-face          ((t (:foreground ,*default*    :background ,*background*))))
    `(font-lock-doc-face               ((t (:foreground "#6ee2ff"     :background ,*background*))))
-   `(font-lock-function-name-face     ((t (:foreground "#effbff"     :background ,*background*))))
+   `(font-lock-function-name-face     ((t (:foreground "#009acd"     :background ,*background*))))
    `(font-lock-keyword-face           ((t (:foreground "#748aa6"     :background ,*background*))))
+   `(font-lock-number-face            ((t (:foreground "#6ee2ff"     :background ,*background*))))
+   `(font-lock-operator-face          ((t (:foreground "#6cc2ff"     :background ,*background*))))
    `(font-lock-preprocessor-face      ((t (:foreground "#748aa6"     :background ,*background*))))
    `(font-lock-string-face            ((t (:foreground "#6ee2ff"     :background ,*background*))))
-   `(font-lock-operator-face          ((t (:foreground "#6cc2ff"     :background ,*background*))))
    `(font-lock-type-face              ((t (:foreground ,*default*    :background ,*background*))))
-   `(font-lock-variable-name-face     ((t (:foreground "#267fb5"     :background ,*background* :slant italic))))
+   `(font-lock-variable-name-face     ((t (:foreground "#267fb5"     :background ,*background*))))
    `(font-lock-warning-face           ((t (:foreground ,*warn-fg*    :background ,*warn-bg*))))
 
    ;; diff
@@ -111,6 +112,13 @@
    `(rainbow-delimiters-depth-7-face  ((t (:foreground ,*rdd-7*))))
    `(rainbow-delimiters-depth-8-face  ((t (:foreground ,*rdd-8*))))
    `(rainbow-delimiters-depth-9-face  ((t (:foreground ,*rdd-9*))))
+
+   ;; show-paren
+   `(show-paren-match                 ((t (:inherit match))))
+   `(show-paren-mismatch              ((t (:inherit font-lock-warning-face))))
+
+   ;; fsharp-mode
+   `(fsharp-ui-operator-face          ((t (:inherit font-lock-keyword-face))))
 
    ))
 
